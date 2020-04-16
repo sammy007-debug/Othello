@@ -1,0 +1,26 @@
+{
+  "name": "othello",
+  "version": "1.0.0",
+  "description": "This is reversi game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammy007-debug/Othello.git"
+  },
+  "author": "Samuel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sammy007-debug/Othello/issues"
+  },
+  "homepage": "https://github.com/sammy007-debug/Othello#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-static": "^0.7.11",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {}
+}
