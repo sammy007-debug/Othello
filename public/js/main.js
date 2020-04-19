@@ -36,7 +36,24 @@ socket.on('join_room_response',function(payload){
     }
     $('#messages').append('<p>New user joined the room: '+payload.username+'</p>');
 });
+socket.on('send_message_response',function(payload){
+    if(payload.result == 'fail'){
+        alert(payload.message);
+        return;
+    }
+    $('#messages').append('<p><b>'+payload.username+' says:</b> '+payload.message+'</p>');
 
+});
+
+
+function send_message(){
+    var payload = {};
+    payload.room = chat_room;
+    payload.username = username;
+    payload.message = $('#send_message_holder').val();
+    console.log('*** Client Log Message: \'send_message\' payload: '+JSON.stringify(payload));
+    socket.emit('send_message',payload);
+}
 
 $(function(){
     var payload = {};
