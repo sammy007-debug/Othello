@@ -1,0 +1,19 @@
+body {
+    background-image: url('../images/empty.gif');
+}
+table#game_board{
+    margin:auto;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(100,100,100);
+
+}
+table#game_board td{
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(50,50,50);
+}
+#messages p{
+    margin:0px;
+}

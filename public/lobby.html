@@ -31,27 +31,32 @@
              <!-- This is where the new people in the lobby are going to go --> 
         </div>
 
+
+
         <div class='row'>
           <div class='col text-left'>
-             <h3>Messages</h3>
+            <h3>Messages</h3>
+             <form class='form-inline' onsubmit='send_message(); return false;'>
+                 
+                     <label for='send_message_holder' class='col-form-label sr-only'>Enter your chat message </label>
+
+                    <input class='form-control mx-auto w-75' type='text' value='' id='send_message_holder' placeholder='Enter your chat message' />
+                
+                    <button type='submit' class='btn btn-default btn-primary'>Send</button>
+              </form>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='col text-left'>
+             
                <div id='messages'>
 
                </div>
           </div>
         </div>
         
-        <div class='row'>
-          <div class='col'>
-             <form onsubmit='send_message(); return false;'>
-                 <div class='form-group'>
-                     <label for='send_message_holder' class='col-form-label sr-only'>Enter your chat message </label>
-
-                      <input class='form-control' type='text' value='' id='send_message_holder' placeholder='Enter your chat message' />
-                 </div>
-                 <button type='submit' class='btn btn-default btn-primary'>Send</button>
-              </form>
-          </div>
-        </div>
+        
     </div>
  
 
