@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/empty.gif');
+    background-image: url('../images/Green.png');
 }
 table#game_board{
     margin:auto;
@@ -16,4 +16,9 @@ table#game_board td{
 }
 #messages p{
     margin:0px;
+}
+td:hover {
+    background:url('../images/hover.gif'), rgb(0,255,0);
+    background-size:100% 100%;
+
 }
