@@ -17,7 +17,7 @@ table#game_board td{
 #messages p{
     margin:0px;
 }
-td:hover {
+td.hovered_over:hover{
     background:url('../images/hover.gif'), rgb(0,255,0);
     background-size:100% 100%;
 
